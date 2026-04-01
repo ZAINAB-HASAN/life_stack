@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Build & Release
+    name: Build & Release APK of LifeStack
     runs-on: macos-latest
 
     steps:
