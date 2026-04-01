@@ -24,24 +24,22 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: AppColors.babyBlue,
-        body: Center(
-          child: Text(
-            AppStrings.exploreNotes,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 30,
-              color: AppColors.blackColor,
-            ),
+    return Scaffold(
+      backgroundColor: AppColors.babyBlue,
+      body: Center(
+        child: Text(
+          AppStrings.appName,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 30,
+            color: AppColors.blackColor,
           ),
         ),
       ),
     );
   }
 
-  void checkLogin() async {
+  void  checkLogin() async {
     await Future.delayed(const Duration(seconds: 2));
     final isLoggedIn = await AppPreference.getLogin();
     print('isLoggedIn: $isLoggedIn');

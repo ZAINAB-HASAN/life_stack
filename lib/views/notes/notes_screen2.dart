@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:noteflow/core/constants/app_colors.dart';
 import 'package:noteflow/core/widgets/bottom_sheet_widget/bottom_sheet_widgets.dart';
-import 'package:noteflow/data/local/db_helper.dart';
+import 'package:noteflow/data/local_db/db_helper.dart';
 
 import '../../core/constants/app_strings.dart';
 

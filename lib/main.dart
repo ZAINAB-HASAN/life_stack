@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -9,26 +9,22 @@ import 'package:noteflow/core/routes/routes_name.dart';
 import 'package:noteflow/data/models/note_model.dart';
 import 'package:noteflow/data/providers/theme_provider.dart';
 import 'package:noteflow/views/bmi/bmi_screen.dart';
+import 'package:noteflow/views/chat/chat_list_screen.dart';
 import 'package:noteflow/views/notes/notes_screen2.dart';
 import 'package:noteflow/views/settings/settings_screen.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'controllers/nav_drawer_controller/nav_controller.dart';
+import 'core/services/notification/notification_service.dart';
 import 'core/widgets/app_bar/custom_app_bar_widget.dart';
 import 'core/widgets/nav_drawer/nav_drawer_widget.dart';
-import 'views/home/home_screen.dart';
+import 'views/chat/chat_screen.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  /*SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.white,
-      //statusBarIconBrightness: Brightness.dark, // Android
-      //statusBarBrightness: Brightness.light, // iOS
-    ),
-  );*/
+  await Firebase.initializeApp();
+  await NotificationService.init();
 
   var directory = await getApplicationDocumentsDirectory();
   Hive.init(directory.path);
@@ -74,6 +70,7 @@ class MainScreen extends StatelessWidget {
   final double scaleFactor = 0.85;
 
   Widget getScreen(String route) {
+    final args = Get.arguments ?? {};
     switch (route) {
       case RoutesName.notesScreen2:
         return const NotesScreen2();
@@ -82,7 +79,8 @@ class MainScreen extends StatelessWidget {
       case RoutesName.settingsScreen:
         return SettingsScreen();
       default:
-        return const HomeScreen();
+        //return ChatListScreen();
+        return NotesScreen2();
     }
   }
 

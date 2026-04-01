@@ -1,4 +1,4 @@
-package com.example.noteflow
+package com.lifestack
 
 import io.flutter.embedding.android.FlutterActivity
 

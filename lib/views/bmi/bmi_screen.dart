@@ -18,6 +18,7 @@ class _BmiScreenState extends State<BmiScreen> {
   var bgColor = AppColors.whiteColor;
 
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
       //appBar: CustomAppBarWidget(screenTitle: AppStrings.yourBMICalculator, isDrawerOpen: false, onMenuTap: () {}, onBackTap: () {}),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "44773945516",
+    "project_id": "lifestack-39098",
+    "storage_bucket": "lifestack-39098.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44773945516:android:6b09b3400fd7fdcd8caf09",
+        "android_client_info": {
+          "package_name": "com.lifestack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF3R4vCb-izUNao8hpfI_D7tonUEKbpFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

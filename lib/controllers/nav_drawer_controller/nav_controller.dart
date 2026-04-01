@@ -3,9 +3,12 @@ import 'package:noteflow/core/constants/app_strings.dart';
 import '../../core/routes/routes_name.dart';
 
 class NavController extends GetxController {
-  var currentRoute = RoutesName.homeScreen.obs;
+  //var currentRoute = RoutesName.chatScreen.obs;
+  var currentRoute = RoutesName.notesScreen2.obs;
   var isDrawerOpen = false.obs;
-  var currentTitle = 'Home'.obs;
+
+  //var currentTitle = 'Chat'.obs;
+  var currentTitle = 'Notes'.obs;
 
   void changeRoute(String route) {
     currentRoute.value = route;
@@ -35,8 +38,8 @@ class NavController extends GetxController {
   /// 🔹 Route → Title mapping
   String _getTitle(String route) {
     switch (route) {
-      case RoutesName.homeScreen:
-        return AppStrings.home;
+      //case RoutesName.chatScreen:
+      //return AppStrings.chat;
       case RoutesName.notesScreen2:
         return AppStrings.notes;
       case RoutesName.bmiScreen:

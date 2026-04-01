@@ -1,11 +1,11 @@
-# note_flow
-
-A new Flutter project.
+# LIFEsSTACK – Productivity & Health Management App
 
 ## Getting Started
 
-NoteFlow is a modern and responsive notes application built using Flutter and Firebase Firestore,
-showcasing complete CRUD functionality with a clean and professional UI.
+LIFEsSTACK is a Flutter app where I implemented a notes system with complete CRUD functionality
+using Sqflite for local storage. I also integrated a BMI calculator as an additional utility
+feature. The project helped me understand database handling, state management, and structuring
+multi-feature Flutter applications.
 
 🚀 Features
 . Create, Read, Update, Delete (CRUD) notes
@@ -25,6 +25,7 @@ showcasing complete CRUD functionality with a clean and professional UI.
 🎯 Purpose
 This project is built for:
 . Flutter portfolio
+. Local Database
 . Firebase CRUD practice
 . Real-world app architecture demonstration
 ----------------------------------------------------------------------------------------------------------

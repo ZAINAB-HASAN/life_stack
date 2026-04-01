@@ -1,5 +1,5 @@
 class AppStrings {
-  static const String appName = 'Note Flow';
+  static const String appName = 'LifeStack';
   static const String exploreNotes = 'Explore your notes here!';
   static const String cancel = 'Cancel';
   static const String createNote = 'Create Note';
@@ -8,6 +8,7 @@ class AppStrings {
   static const String save = 'Save';
   static const String update = 'Update';
   static const String home = 'Home';
+  static const String chat = 'Chat';
   static const String enterTitleHint = 'Enter your title here...';
   static const String enterDescHint = 'Enter your description here...';
   static const String noNotesFound = 'No notes found. Tap + to add one!';

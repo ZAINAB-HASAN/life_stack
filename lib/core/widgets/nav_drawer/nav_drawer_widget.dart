@@ -60,12 +60,12 @@ class NavDrawerWidget extends StatelessWidget {
               child: ListView(
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 children: [
-                  _DrawerItem(
-                    title: AppStrings.home,
-                    icon: Icons.home_outlined,
-                    isSelected: selectedRoute == RoutesName.homeScreen,
-                    onTap: () => onItemTap(RoutesName.homeScreen),
-                  ),
+                  /*_DrawerItem(
+                    title: AppStrings.chat,
+                    icon: Icons.chat,
+                    isSelected: selectedRoute == RoutesName.chatScreen,
+                    onTap: () => onItemTap(RoutesName.chatScreen),
+                  ),*/
                   _DrawerItem(
                     title: AppStrings.notes,
                     icon: Icons.note_alt_outlined,
