@@ -9,7 +9,6 @@ import 'package:noteflow/core/routes/routes_name.dart';
 import 'package:noteflow/data/models/note_model.dart';
 import 'package:noteflow/data/providers/theme_provider.dart';
 import 'package:noteflow/views/bmi/bmi_screen.dart';
-import 'package:noteflow/views/chat/chat_list_screen.dart';
 import 'package:noteflow/views/notes/notes_screen2.dart';
 import 'package:noteflow/views/settings/settings_screen.dart';
 import 'package:path_provider/path_provider.dart';
@@ -19,7 +18,7 @@ import 'controllers/nav_drawer_controller/nav_controller.dart';
 import 'core/services/notification/notification_service.dart';
 import 'core/widgets/app_bar/custom_app_bar_widget.dart';
 import 'core/widgets/nav_drawer/nav_drawer_widget.dart';
-import 'views/chat/chat_screen.dart';
+import 'views/digital_signature/digital_signature_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -76,8 +75,11 @@ class MainScreen extends StatelessWidget {
         return const NotesScreen2();
       case RoutesName.bmiScreen:
         return const BmiScreen();
+      case RoutesName.digitalSignatureScreen:
+        return DigitalSignatureScreen();
       case RoutesName.settingsScreen:
         return SettingsScreen();
+
       default:
         //return ChatListScreen();
         return NotesScreen2();

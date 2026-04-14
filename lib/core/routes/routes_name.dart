@@ -8,4 +8,5 @@ class RoutesName {
   static const String bmiScreen = '/bmi_screen';
   static const String notesScreen2 = '/notesScreen2';
   static const String settingsScreen = '/settings';
+  static const String digitalSignatureScreen = '/dig_sign';
 }

@@ -9,6 +9,7 @@ import 'package:noteflow/views/notes/notes_screen.dart';
 import 'package:noteflow/views/notes/notes_screen2.dart';
 import 'package:noteflow/views/splash/splash_screen.dart';
 
+import '../../views/digital_signature/digital_signature_screen.dart';
 import '../../views/settings/settings_screen.dart';
 
 class AppRoutes {
@@ -30,5 +31,6 @@ class AppRoutes {
     GetPage(name: RoutesName.bmiScreen, page: () => BmiScreen()),
     GetPage(name: RoutesName.notesScreen2, page: () => NotesScreen2()),
     GetPage(name: RoutesName.settingsScreen, page: () => SettingsScreen()),
+    GetPage(name: RoutesName.digitalSignatureScreen, page: () => DigitalSignatureScreen()),
   ];
 }

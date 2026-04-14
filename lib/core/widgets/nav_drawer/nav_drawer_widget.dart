@@ -78,6 +78,13 @@ class NavDrawerWidget extends StatelessWidget {
                     isSelected: selectedRoute == RoutesName.bmiScreen,
                     onTap: () => onItemTap(RoutesName.bmiScreen),
                   ),
+                  _DrawerItem(
+                    title: AppStrings.digitalSignature,
+                    icon: Icons.mode_edit,
+                    isSelected:
+                        selectedRoute == RoutesName.digitalSignatureScreen,
+                    onTap: () => onItemTap(RoutesName.digitalSignatureScreen),
+                  ),
                 ],
               ),
             ),
